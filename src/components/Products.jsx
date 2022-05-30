@@ -7,7 +7,7 @@ import { useEffect ,useState} from "react";
 const Products = () => {
 
   const[page,setpage]=useState(1)
-  const[lastpage,setlastpage]=useState(0)
+ 
   const[product,setproduct]=useState([])
   useEffect(()=>{
     const getdata=async()=>{
@@ -31,12 +31,14 @@ const Products = () => {
       {product.map((post)=>{
       return(
         <Grid>
-        <div>
+        <div key={post.id}>
           <div className="box">
-                   <img src={post.imageSrc} alt=""/>
+                   <img style={{height:"200px",width:"300px"}} src={post.imageSrc} alt=""/>
           </div>
-           <p>{post.title}</p>
-          <p>{post.category}</p>
+          <div style={{display:"flex" ,gap:"50px"}}>
+          <div> <p>{post.title}</p></div>
+         <div> <p>{post.category}</p></div> 
+         </div>
           <p>{post.gender}</p>
           <p>{post.price}</p>
          
