@@ -22,10 +22,15 @@ const Products = () => {
   // const Grid = () => <div />;
 
   return (
+    <>
+    <div style={{marginLeft:"400px"}}>
+    <Addproduct/>
+    </div>
+  
     <Flex>
       {/*  AddProduct */}
       
-      <Addproduct/>
+    
      {/* List of Products */}
 
       {product.map((post)=>{
@@ -50,12 +55,15 @@ const Products = () => {
       )
       })}
       <br/>
-      <Pagination/>
+     
       {/* Pagination */}
      
     </Flex>
-  
-      
+    <div style={{marginLeft:"400px",justifycontent:"center"}}>
+    <Pagination/>
+    </div>
+    
+    </>  
   );
 };
 
