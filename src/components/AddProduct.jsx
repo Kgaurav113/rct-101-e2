@@ -27,7 +27,7 @@ const handlesubmit=(e)=>{
           <Select data-cy="add-product-category"name="category" onChange={handlechange}>
             <option data-cy="add-product-category-shirt" >shirt</option>
             <option data-cy="add-product-category-pant">pant</option>
-            <option data-cy="add-product-category-jeans">jeans</option>
+            <option data-cy="add-product-category-jeans">jean</option>
           </Select>
           <RadioGroup data-cy="add-product-gender"name="gender" onChange={handlechange}>
             <Radio data-cy="add-product-gender-male">male</Radio>
