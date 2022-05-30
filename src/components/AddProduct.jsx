@@ -16,7 +16,7 @@ const handlechange=(e)=>{
 }
 const handlesubmit=(e)=>{
   e.preventDefault();
-  console.log(modal)
+  console.log("jj")
 }
   return (
     <>
